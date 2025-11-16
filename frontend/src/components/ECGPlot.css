@@ -1,0 +1,109 @@
+.ecg-plot-container {
+  background: var(--bg-primary);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn 0.5s ease-out;
+  border: 1px solid var(--border-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ecg-plot-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: calc(var(--border-radius) - 4px);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.info-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.info-label {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-value {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-family: 'SF Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+.info-value.event-type {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.plot-wrapper {
+  position: relative;
+  background: var(--bg-primary);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.plot-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: var(--text-secondary);
+}
+
+.plot-error {
+  padding: 2rem;
+  text-align: center;
+  color: var(--danger-color);
+  background: #fef2f2;
+  border-radius: var(--border-radius);
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 768px) {
+  .ecg-plot-container {
+    padding: 1rem;
+  }
+
+  .ecg-plot-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .info-item {
+    padding: 0.75rem;
+  }
+}

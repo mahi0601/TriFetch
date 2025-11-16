@@ -1,0 +1,6 @@
+{
+  "Patient_IR_ID": "TEST-123",
+  "EventOccuredTime": "2025-11-16 12:00:00.000",
+  "Event_Name": "TEST",
+  "IsRejected": "0"
+}
