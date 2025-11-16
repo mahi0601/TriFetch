@@ -284,49 +284,49 @@ Data is cached in memory after first load to keep response times under 8 seconds
 ### Main Application View
 The application interface displays a sidebar with 62 events and a main content area for ECG visualization. The header shows "ECG Viewer" and the layout is clean and modern.
 
-![Main Application View](screenshots/main-view.png)
+![Main Application View](screenshots/Screenshot%202025-11-16%20at%206.44.32%20PM.png)
 *Full application view showing event list sidebar (left) with 62 events and ECG plot area (right) ready for event selection*
 
 ### Event List Sidebar
 The sidebar displays all available events organized by type (AFIB, VTACH, BRADY, PAUSE, TACHY) with their approval status. Each event shows the event type, a status badge (green for approved, red for rejected), event ID, and patient ID.
 
-![Event List](screenshots/event-list.png)
+![Event List](screenshots/Screenshot%202025-11-16%20at%206.42.53%20PM.png)
 *Scrollable event list showing multiple event types with approved (green) and rejected (red) status badges. Events are clickable to view their ECG data.*
 
 ### AFIB Event with Event Marker
 AFIB (Atrial Fibrillation) event visualization showing irregular ECG patterns. The red vertical line marks the exact moment the event occurred at 42.8 seconds.
 
-![AFIB Event](screenshots/afib-event.png)
+![AFIB Event](screenshots/ecg-AFIB-1763298726765.png)
 *AFIB event ECG plot displaying both Channel 1 (blue) and Channel 2 (green) waveforms with prominent red event marker at 42.8 seconds. The irregular patterns characteristic of atrial fibrillation are clearly visible.*
 
 ### VTACH Event with Event Marker
 VTACH (Ventricular Tachycardia) event showing rapid ventricular rhythms. The event marker indicates the event occurrence at 34.6 seconds.
 
-![VTACH Event](screenshots/vtach-event.png)
+![VTACH Event](screenshots/Screenshot%202025-11-16%20at%206.42.28%20PM.png)
 *VTACH event visualization with red event marker at 34.6 seconds. The plot shows rapid, regular ventricular rhythms typical of ventricular tachycardia across both channels.*
 
 ### BRADY Event with Event Marker
 BRADY (Bradycardia) event displaying slower heart rate patterns. The event marker shows when the bradycardia event was detected at 33.9 seconds.
 
-![BRADY Event](screenshots/brady-event.png)
+![BRADY Event](screenshots/Screenshot%202025-11-16%20at%206.42.26%20PM.png)
 *BRADY event plot with red event marker at 33.9 seconds. The slower, more spaced-out heartbeats characteristic of bradycardia are visible in both ECG channels.*
 
 ### Event Information Panel
 The information panel displays key metrics for the selected event including event type, precise event time, recording duration, sampling rate, and total number of samples.
 
-![Event Information](screenshots/event-info.png)
+![Event Information](screenshots/Screenshot%202025-11-16%20at%206.42.08%20PM.png)
 *Event details panel showing: Event Type (AFIB), Event Time (42.8s), Duration (90.0s), Sampling Rate (200 Hz), and Total Samples (18,000). This information helps users understand the context of each ECG recording.*
 
 ### Multiple Event Types View
 The sidebar demonstrates the application's ability to handle various arrhythmia types. Events are clearly categorized and color-coded by their approval status.
 
-![Multiple Event Types](screenshots/multiple-events.png)
+![Multiple Event Types](screenshots/Screenshot%202025-11-16%20at%206.42.02%20PM.png)
 *Sidebar view showing different event types (AFIB, VTACH, BRADY, PAUSE, TACHY) with their respective status badges. The interface supports both approved and rejected events for comprehensive analysis.*
 
 ### API Documentation
 FastAPI automatically generates interactive API documentation using Swagger UI, making it easy to test endpoints and understand request/response formats.
 
-![API Documentation](screenshots/api-docs.png)
+![API Documentation](screenshots/Screenshot%202025-11-16%20at%206.41.55%20PM.png)
 *Swagger UI interface showing all available API endpoints including GET /api/events, GET /api/events/{event_id}, POST /api/predict, and GET /api/health. Each endpoint includes detailed request/response schemas and can be tested directly from the browser.*
 
 ## Future Improvements
