@@ -285,43 +285,49 @@ Data is cached in memory after first load to keep response times under 8 seconds
 The application displays events in a sidebar and shows detailed ECG plots with event markers.
 
 ![Main Application View](screenshots/main-view.png)
-*Event list sidebar with 62 events and ECG plot showing both channels with red event marker*
+*Full application view showing event list sidebar with 62 events and ECG plot displaying both channels with red event marker*
 
-### Event List
+### Event List Sidebar
 The sidebar displays all available events with their types, approval status, and patient IDs.
 
 ![Event List](screenshots/event-list.png)
-*Scrollable event list showing AFIB, VTACH, BRADY, and other event types with approved/rejected status*
+*Scrollable event list showing AFIB, VTACH, BRADY, and other event types with approved/rejected status badges*
 
-### ECG Plot with Event Marker
-Interactive ECG visualization with both channels and a prominent red vertical line marking the event occurrence.
+### ECG Plot - AFIB Event
+Interactive ECG visualization showing AFIB event with both channels and a prominent red vertical line marking the event occurrence.
 
 ![ECG Plot - AFIB Event](screenshots/ecg-plot-afib.png)
-*AFIB event visualization with red event marker at 42.8 seconds*
+*AFIB event visualization with red event marker at 42.8 seconds, showing both Channel 1 (blue) and Channel 2 (green) waveforms*
+
+### ECG Plot - VTACH Event
+VTACH event visualization demonstrating the application's ability to handle different arrhythmia types.
 
 ![ECG Plot - VTACH Event](screenshots/ecg-plot-vtach.png)
-*VTACH event visualization with red event marker at 34.6 seconds*
+*VTACH event visualization with red event marker at 34.6 seconds, displaying rhythmic patterns characteristic of ventricular tachycardia*
+
+### ECG Plot - BRADY Event
+BRADY event visualization showing bradycardia patterns with clear event marker.
 
 ![ECG Plot - BRADY Event](screenshots/ecg-plot-brady.png)
-*BRADY event visualization with red event marker at 33.9 seconds*
+*BRADY event visualization with red event marker at 33.9 seconds, showing slower heart rate patterns*
 
 ### Event Information Panel
 Key metrics displayed for each selected event including event type, time, duration, sampling rate, and sample count.
 
 ![Event Information](screenshots/event-info.png)
-*Event details panel showing event type, time, duration, sampling rate, and total samples*
+*Event details panel showing event type (AFIB), event time (42.8s), duration (90.0s), sampling rate (200 Hz), and total samples (18,000)*
 
 ### Multiple Event Types
-The application supports various arrhythmia types including AFIB, VTACH, BRADY, PAUSE, and TACHY.
+The application supports various arrhythmia types including AFIB, VTACH, BRADY, PAUSE, and TACHY with both approved and rejected statuses.
 
 ![Multiple Event Types](screenshots/multiple-events.png)
-*Different event types displayed in the sidebar with their respective status badges*
+*Different event types displayed in the sidebar with their respective status badges (green for approved, red for rejected)*
 
 ### API Documentation
-FastAPI automatically generates interactive API documentation.
+FastAPI automatically generates interactive API documentation with Swagger UI.
 
 ![API Documentation](screenshots/api-docs.png)
-*Swagger UI showing all available API endpoints with request/response schemas*
+*Swagger UI showing all available API endpoints (/api/events, /api/events/{event_id}, /api/predict, /api/health) with request/response schemas*
 
 ## Future Improvements
 
