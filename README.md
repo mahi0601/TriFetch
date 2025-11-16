@@ -284,72 +284,72 @@ Data is cached in memory after first load to keep response times under 8 seconds
 ### Main Application View
 The application interface displays a sidebar with 62 events and a main content area for ECG visualization. The header shows "ECG Viewer" and the layout is clean and modern.
 
-![Main Application View](screenshots/Screenshot%202025-11-16%20at%206.44.32%20PM.png)
+![Main Application View](screenshots/main-application-view.png)
 *Full application view showing event list sidebar (left) with 62 events and ECG plot area (right) ready for event selection*
 
 ### Event List Sidebar
 The sidebar displays all available events organized by type (AFIB, VTACH, BRADY, PAUSE, TACHY) with their approval status. Each event shows the event type, a status badge (green for approved, red for rejected), event ID, and patient ID.
 
-![Event List](screenshots/Screenshot%202025-11-16%20at%206.42.53%20PM.png)
+![Event List](screenshots/event-list-sidebar.png)
 *Scrollable event list showing multiple event types with approved (green) and rejected (red) status badges. Events are clickable to view their ECG data.*
 
 ### AFIB Event Visualization
 AFIB (Atrial Fibrillation) event visualization showing irregular ECG patterns. The red vertical line marks the exact moment the event occurred.
 
-![AFIB Event](screenshots/ecg-AFIB-1763298726765.png)
+![AFIB Event](screenshots/afib-event.png)
 *AFIB event ECG plot displaying both Channel 1 (blue) and Channel 2 (green) waveforms with prominent red event marker. The irregular patterns characteristic of atrial fibrillation are clearly visible.*
 
 ### Additional AFIB Event View
 Another view of an AFIB event showing different ECG patterns and event marker placement.
 
-![AFIB Event View](screenshots/Screenshot%202025-11-16%20at%206.42.32%20PM.png)
+![AFIB Event View](screenshots/afib-event-2.png)
 *Alternative AFIB event visualization demonstrating the variability in atrial fibrillation patterns across different recordings.*
 
 ### VTACH Event with Event Marker
 VTACH (Ventricular Tachycardia) event showing rapid ventricular rhythms. The event marker indicates the event occurrence.
 
-![VTACH Event](screenshots/Screenshot%202025-11-16%20at%206.42.28%20PM.png)
+![VTACH Event](screenshots/vtach-event.png)
 *VTACH event visualization with red event marker. The plot shows rapid, regular ventricular rhythms typical of ventricular tachycardia across both channels.*
 
 ### BRADY Event with Event Marker
 BRADY (Bradycardia) event displaying slower heart rate patterns. The event marker shows when the bradycardia event was detected.
 
-![BRADY Event](screenshots/Screenshot%202025-11-16%20at%206.42.26%20PM.png)
+![BRADY Event](screenshots/brady-event.png)
 *BRADY event plot with red event marker. The slower, more spaced-out heartbeats characteristic of bradycardia are visible in both ECG channels.*
 
 ### Event Information Panel
 The information panel displays key metrics for the selected event including event type, precise event time, recording duration, sampling rate, and total number of samples.
 
-![Event Information](screenshots/Screenshot%202025-11-16%20at%206.42.08%20PM.png)
+![Event Information](screenshots/event-information-panel.png)
 *Event details panel showing: Event Type, Event Time, Duration, Sampling Rate, and Total Samples. This information helps users understand the context of each ECG recording.*
 
 ### Multiple Event Types View
 The sidebar demonstrates the application's ability to handle various arrhythmia types. Events are clearly categorized and color-coded by their approval status.
 
-![Multiple Event Types](screenshots/Screenshot%202025-11-16%20at%206.42.02%20PM.png)
+![Multiple Event Types](screenshots/multiple-event-types.png)
 *Sidebar view showing different event types (AFIB, VTACH, BRADY, PAUSE, TACHY) with their respective status badges. The interface supports both approved and rejected events for comprehensive analysis.*
 
 ### API Documentation
 FastAPI automatically generates interactive API documentation using Swagger UI, making it easy to test endpoints and understand request/response formats.
 
-![API Documentation](screenshots/Screenshot%202025-11-16%20at%206.41.55%20PM.png)
+![API Documentation](screenshots/api-documentation.png)
 *Swagger UI interface showing all available API endpoints including GET /api/events, GET /api/events/{event_id}, POST /api/predict, and GET /api/health. Each endpoint includes detailed request/response schemas and can be tested directly from the browser.*
 
 ### Additional Application Views
 
-![Application View 1](screenshots/Screenshot%202025-11-16%20at%206.41.51%20PM.png)
+![Application View 1](screenshots/application-view-1.png)
 *Application interface showing event selection and ECG visualization with interactive controls.*
 
-![Application View 2](screenshots/Screenshot%202025-11-16%20at%206.41.47%20PM.png)
+![Application View 2](screenshots/application-view-2.png)
 *Another view of the application demonstrating the responsive layout and event browsing interface.*
 
-![Application View 3](screenshots/Screenshot%202025-11-16%20at%206.41.14%20PM.png)
+![Application View 3](screenshots/application-view-3.png)
 *ECG plot visualization with zoom and pan capabilities, showing detailed waveform analysis.*
 
-![Application View 4](screenshots/Screenshot%202025-11-16%20at%206.41.07%20PM.png)
+![Application View 4](screenshots/application-view-4.png)
 *Event list and ECG visualization interface with multiple events displayed in the sidebar.*
 
-![Application View 5](screenshots/Screenshot%202025-11-16%20at%206.40.55%20PM.png)
+![Application View 5](screenshots/application-view-5.png)
 *Initial application view showing the event list and empty ECG plot area ready for event selection.*
 
 ## Future Improvements
