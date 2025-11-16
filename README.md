@@ -279,6 +279,50 @@ The code follows SOLID principles:
 
 Data is cached in memory after first load to keep response times under 8 seconds for episode loading.
 
+## Screenshots
+
+### Main Application View
+The application displays events in a sidebar and shows detailed ECG plots with event markers.
+
+![Main Application View](screenshots/main-view.png)
+*Event list sidebar with 62 events and ECG plot showing both channels with red event marker*
+
+### Event List
+The sidebar displays all available events with their types, approval status, and patient IDs.
+
+![Event List](screenshots/event-list.png)
+*Scrollable event list showing AFIB, VTACH, BRADY, and other event types with approved/rejected status*
+
+### ECG Plot with Event Marker
+Interactive ECG visualization with both channels and a prominent red vertical line marking the event occurrence.
+
+![ECG Plot - AFIB Event](screenshots/ecg-plot-afib.png)
+*AFIB event visualization with red event marker at 42.8 seconds*
+
+![ECG Plot - VTACH Event](screenshots/ecg-plot-vtach.png)
+*VTACH event visualization with red event marker at 34.6 seconds*
+
+![ECG Plot - BRADY Event](screenshots/ecg-plot-brady.png)
+*BRADY event visualization with red event marker at 33.9 seconds*
+
+### Event Information Panel
+Key metrics displayed for each selected event including event type, time, duration, sampling rate, and sample count.
+
+![Event Information](screenshots/event-info.png)
+*Event details panel showing event type, time, duration, sampling rate, and total samples*
+
+### Multiple Event Types
+The application supports various arrhythmia types including AFIB, VTACH, BRADY, PAUSE, and TACHY.
+
+![Multiple Event Types](screenshots/multiple-events.png)
+*Different event types displayed in the sidebar with their respective status badges*
+
+### API Documentation
+FastAPI automatically generates interactive API documentation.
+
+![API Documentation](screenshots/api-docs.png)
+*Swagger UI showing all available API endpoints with request/response schemas*
+
 ## Future Improvements
 
 - Deep learning models (CNN/LSTM) for better feature learning
