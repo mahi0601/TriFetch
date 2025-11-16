@@ -286,10 +286,6 @@ Full application interface showing the event list sidebar and ECG plot with even
 
 ![Main Application View](screenshots/main-view.png)
 
-### Event List with ECG Plot
-Event list sidebar displaying 62 events with detailed ECG visualization showing both channels and the red event marker.
-
-![Event List and ECG Plot](screenshots/event-list-ecg.png)
 
 ### AFIB Event Visualization
 AFIB event showing irregular ECG patterns with the event marker at 42.8 seconds.
